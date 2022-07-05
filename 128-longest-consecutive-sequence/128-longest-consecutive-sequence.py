@@ -1,10 +1,10 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0 
         nums = sorted(list(set(nums)))
         length = 1
         max_len = 1
-        if len(nums) == 0:
-            return 0 
         for i in range(len(nums) - 1):
             if nums[i+1] == nums[i] + 1:
                 length += 1
