@@ -3,7 +3,7 @@ class Solution:
         txt = text.split(' ')
         res = []
         com = first+second
-        if len(txt) < 3 or len(text) <= len(first) + len(second):
+        if len(txt) < 3 or len(text) <= len(com):
             return res
         for i in range(len(txt)-2):
             if com == txt[i]+txt[i+1]:
