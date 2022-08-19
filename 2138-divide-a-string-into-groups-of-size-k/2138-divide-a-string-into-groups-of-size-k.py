@@ -3,6 +3,6 @@ class Solution:
         res = [s[i:i+k] for i in range(0, len(s), k)]
         x = len(res[-1])
         if x < k :
-            for x in range(k-x):
+            for i in range(k-x):
                 res[-1] += fill
         return res
