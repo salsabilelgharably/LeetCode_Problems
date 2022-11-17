@@ -25,7 +25,7 @@
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Constraints: </strong></p>
 
 <ul>
 	<li><code>1 &lt;= num.length &lt;= 10<sup>5</sup></code></li>
