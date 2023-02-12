@@ -1,12 +1,20 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        for(int i =0; i<nums.size()-1; i+=2){
-            if(nums[i] != nums[i+1]){
-                return nums[i];
+        map <int, int> mp;
+        for(int num: nums){
+            if(mp.find(num) == mp.end()){
+                mp[num]=1;
+            }
+            else{
+                mp[num] +=1;
             }
         }
-        return nums[nums.size()-1];    
+        for(int num: nums){
+            if(mp[num] == 1){
+                return num;
+            }
+        }
+        return 0;
     }
 };
