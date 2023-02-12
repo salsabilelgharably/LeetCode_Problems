@@ -1,4 +1,5 @@
-bool com(int a,int b){
+bool com(int a,int b)
+{
     return a>b;
 }
 class Solution {
