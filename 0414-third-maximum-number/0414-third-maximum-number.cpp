@@ -1,5 +1,4 @@
-bool com(int a,int b)
-{
+bool com(int a,int b){
     return a>b;
 }
 class Solution {
@@ -9,10 +8,7 @@ public:
         int prev = nums[0];
         int c = 1;
         for(int i =1; i < nums.size(); i++){
-            if(nums[i] == prev){
-                continue;
-            }
-            else{
+            if(nums[i] != prev){
                 c++;
                 prev = nums[i];
             }
